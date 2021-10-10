@@ -6,16 +6,21 @@ import map from '../../public/about/map.jpg';
 import Image from 'next/image'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
 
 export default function Pageneeded() {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Info Needed | Kondagaon Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="Information Required" />
             <section className="sectionBlock py-5">
-                <Container>
-                    Information needs to be provided
+            <Container className="text-center py-5">
+                   <div><h2>Information needs to be provided</h2></div>
                 </Container>
             </section>
             <Footer />

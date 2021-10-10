@@ -1,26 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Table, Button, Row, Col, Placeholder, Alert } from 'react-bootstrap'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import bannerBreadcrumbs from '../../public/images/breadcrumb.jpg'
 import BreadCrumb from '../../components/Breadcrumb'
+import {Helmet} from "react-helmet";
 
 
 export default function About() {
+
+  
     
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>About | Kondagaon Municipal Corporation</title>
+            </Helmet>
             <Header />
             <BreadCrumb banner={bannerBreadcrumbs} name="About Us" />
                 <section className="sectionBlock py-5">
                     <Container>
-                    <p>Kumhari is a city located in the Indian state of Chhattisgarh. It comes under the Durg district. It is situated at 21°27'N 81°52' and has an average elevation of 284 meters above the sea level.</p>
-
-                    <p>Kumhari is located in Dhamdha tehsil of Durg district in the Indian state of Chhattisgarh. Kumhari is a Nagar Palika Parishad and situated at Durg district and Raipur district border beside Karun River.</p>
-
-                    <p>The nearest city to Kumhari in Durg is Bhilai. It is situated at a distance of 5.5 nm towards the west of the Kumhari city. Raipur, the capital city of the state is located towards the east of this Chhattisgarh city. Kumhari's distance from Raipur is about 6.8 nm. The other nearby towns are Jamul and Banbarad situated towards the west of the Kumhari city of Durg. While its distance from the town of Jamul is 6.6 nm, Banbarad is situated 9 nm away from the city of Kumhari. Towards the north of the Kumhari city are the towns of Dharsinwa and Kusmi situated at a distance of 11.7 nm and 15 nm respectively. The city of Mandhar in Raipur district is situated at a distance of 10.6 nm towards the east of the city of Kumhari. The city of Patan is situated 14 nm away towards the south of Kumhari, Chhattisgarh.</p>
-
-                    <p>The nearest airport to this Chhattisgarh city is the one located in [Raipur] Swami Vivekanand airport.</p>
+                    <p>Kondagaon a municipality about 70 kilometers from Jagdalpur city is the headquarter of Kondagaon district in the Indian state of Chhattisgarh. It is the third largest city of Bastar division. Kondagaon separated from Bastar district on 24 January 2012 and formed as 27th district of the Chhattisgarh state. It is mostly renowned for its bell metal craft and other art forms native to the tribal of Bastar. Also known as the Shilp sheher (lit. craft city) of Chhattisgarh owing to the variety of indigenous crafts produced in the area.</p>
+                    <p>MLA-Sh Mohan Lal Markam (Congress)</p>
+                    <p>Collector- Pushpendra Kumar Meena[1]</p>
+                    <p>SP-Sh Sujit Kumar (IPS)</p>
+                    <p>CEO-Nupur Rashi Panna (IAS)</p>
                     </Container>
                 </section>
             <Footer />
